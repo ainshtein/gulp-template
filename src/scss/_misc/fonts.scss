@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'robotomedium';
+    src: url('../../fonts/roboto-medium-webfont.woff2') format('woff2'),
+         url('../../fonts/roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('../../fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('../../fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin roboto($style: regular) {
+    @if $style == regular {
+      font-family: 'robotomedium', 'Arial', 'Helvetica',
+     'Roboto', 'Liberation Sans', 'DejaVu Sans', 'sans-serif';
+    }
+
+    @if $style == bold {
+      font-family: 'robotobold', 'Arial', 'Helvetica',
+     'Roboto', 'Liberation Sans', 'DejaVu Sans', 'sans-serif';
+    }
+}
